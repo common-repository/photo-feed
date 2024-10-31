@@ -1,0 +1,188 @@
+.form-table .pfa-py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pfa-back-link {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    box-shadow: 0px 1px;
+    vertical-align: middle;
+}
+.pfa-page-header h3{
+	font-size: 28px;
+	line-height: normal;
+}
+.pfa-tab-content-row {
+    display: none;
+    border: 1px solid #ebebeb;
+}
+.pfa-tab-content-row.active {
+    display: table-row;
+}
+.pfa-tab-content-row.error{
+    border-color: #e23565;
+}
+.pfa-tab-content-row > th:first-child {
+    padding-left: 10px;
+}
+.pfa-tab-content-row .pfa-tab-content-row > th:first-child {
+    padding-left: 0px;
+}
+table.pfa-table-edit {
+    table-layout: fixed;
+}
+.pfa-table-edit td {
+    vertical-align: top;
+}
+.pfa-table-edit .dashicons-editor-help {
+    cursor: pointer;
+    color: #007cba;
+}
+.pfa-table-edit .dashicons-editor-help + .description {
+    display: none;
+    font-weight: normal;
+	margin: auto;
+    line-height: 1.1;
+}
+.pfa-table-edit input[type="checkbox"],.ig_adv-setting input[type="checkbox"] {
+    zoom: 1.3;
+}
+.pfa-table-edit input[type="checkbox"]:checked:before {
+    color: #e23565;
+}
+.pfa-table-edit input[type="color"] {
+    vertical-align: top;
+    padding: 1px 2px;
+    width: 50px;
+    height: 26px;
+}
+.pff-response {
+    font-size: 16px;
+    color: #e93b59;
+    padding: 5px;
+}
+#pfa-gallery-setting-wrapper{
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    margin-top: 35px;
+	border: 1px solid #e5e5e5;
+}
+.pfa-hr-title {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.pfa-layouts-list {
+    margin: auto;
+    display: flex;
+}
+.pfa-layouts-list > li+li {
+    margin-left: 25px;
+}
+#pfa-form-update {
+    flex-basis: 550px;
+    min-width: 550px;
+    padding-right: 10px;
+    border-right: 1px solid #e0dfdf;
+}
+#ig-preview-panel {
+    max-width: 1200px;
+    position: sticky;
+    top: 50px;
+	padding-left: 10px;
+	flex: 1 1 0;
+    min-width: 0;
+}
+#ig-preview.loading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(218, 218, 218, 0.5);
+    z-index: 100;
+}
+
+/* ******** ig accounts  ********** */
+.pfa-accounts-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.pfa-accounts-list .pfa-account {
+	width: 200px;
+	height: 180px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.pfa-accounts-list .pfa-account:hover {
+	box-shadow: 0 5px 10px rgb(0 0 0/ 6%);
+	background: #f6f6f6;
+}
+.pfa-account-card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: normal;
+	word-break: break-word;
+	line-height: normal;
+	text-decoration: none;
+	padding: 0;
+}
+
+.pfa-account-card .dashicons {
+	font-size: 3em;
+	line-height: normal;
+	width: auto;
+	height: auto;
+}
+
+button.pfa-account-card {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	color: #212121;
+}
+.pfa-account-action {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.pfa-account-action button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 2px 3px;
+}
+
+
+@media (max-width: 1199px){
+    #pfa-gallery-setting-wrapper {
+        flex-direction: column;
+	}
+    #pfa-form-update {
+        flex-basis: 100%;
+		min-width: auto;
+        padding-right: 0;
+        border-right-width: 0px;
+        margin-right: 0;
+	}
+	#ig-preview-panel {
+		padding-left: 0px;
+	}
+}
